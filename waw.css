@@ -1,0 +1,23 @@
+.cover{
+    position: relative;
+    height: 100vh;
+    background-color: #E5C1BD;
+    margin-bottom: 5rem;
+}
+
+.coverImage{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+}
+
+.more a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.more a:hover{
+    font-weight: bold;
+}
