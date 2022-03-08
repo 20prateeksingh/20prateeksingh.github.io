@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- Back to Top -->
+
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <img src="Assets/chevron-up.svg" alt="Back to Top" id="chevron-up">
+    </button>
+
+    <!-- Navbar -->
+
+    <nav class="autohide navbar navbar-expand-sm navbar-light navbarBg fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="Assets/Logo4.svg" alt="Prateek Singh" id="bottomLogo">
+                <img src="Assets/Logo6.svg" alt="Prateek Singh" id="topLogo">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#recentProjects" class="nav-link">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Assets/PrateekSingh_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">RESUME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Greet -->
+    <div class="container-fluid greet d-flex flex-column min-vh-100 justify-content-center">
+        <div class="row forcedContainer">
+            <h2>
+                Hey <div class="wave">&#x1F44B;</div>
+            </h2> 
+            <h1>
+                I’m <a href="about.html" class="myName">Prateek Singh</a>, <br> a Product Designer based in India. 
+            </h1>
+            <div class="body">
+                <br>
+                Currently <strong>Lead UX</strong> @ Wongdoody | Infosys
+            </div>
+        </div>
+        <div class="row text-center" id="goto">
+            <a href="#recentProjects" class="px-5">
+                <img src="/Assets/chevron-double-down.svg" alt="Go to Projects" id="chevron-down">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Recent Projects -->
+
+    <div class="container recentProjects" id="recentProjects">
+        <div class="row">
+            <div class="col-lg-3 mb-5 col-12">
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="row g-5 justify-content-between" id="projects">
+
+                    <div class="col-lg-6 col-12 px-5 project">
+                        <div class="caption">
+                            01 - MULTIPLE PROJECTS
+                        </div>
+                        <a href="/waw.html">
+                            <h3>
+                                Works at Wongdoody
+                            </h3>
+                        </a>
+                        <div class="body">
+                            I have had the opportunity to work with some amazing Fortune 500 companies.
+                        </div>
+                        <a href="/waw.html">
+                            <div class="imgBox cardTwo text-center align-items-center" id="gifs-rows">
+                                <img src="Assets/Laptops-2.png" alt="image of a car infotainment" class="img-fluid cardImg presetFile" id="wongdoody">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 col-12 px-5 project">
+                        <div class="caption">
+                            02 - UX DESIGN, UX RESEARCH, SYSTEMS THINKING
+                        </div>
+                        <a href="/PA.html">
+                            <h3>
+                                Personal Assistant for Car Users
+                            </h3>
+                        </a>
+                        <div class="body">
+                            Re-imagining the In-car UX with a VUI first approach with a Systems thinking approach.
+                        </div>
+                        <a href="/PA.html">
+                            <div class="imgBox cardOne text-center align-items-center">
+                                <img src="Assets/Feature1.png" alt="image of a car infotainment" class="img-fluid cardImg">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-6 col-12 px-5 project">
+                        <div class="caption">
+                            03 - UX DESIGN, UX RESEARCH
+                        </div>
+                        <a href="/PA.html">
+                            <h3>
+                                Zimma - case study
+                            </h3>
+                        </a>
+                        <div class="body">
+                            An ideative exercise to use crowd sourcing to highlight infrastructural issue in a city.
+                        </div>
+                        <a href="https://www.behance.net/gallery/108066089/Zimma" target="_blank" rel="noopener noreferrer">
+                            <div class="imgBox cardThree text-center align-items-center">
+                                <img src="Assets/1_Home.png"  alt="image of a car infotainment" class="img-fluid cardImg">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 col-12 px-5 project">
+                        <div class="caption">
+                            04 - RESEARCH, INDUSTRIAL DESIGN
+                        </div>
+                        <a href="/PA.html">
+                            <h3>
+                                Archbot - Coming soon!
+                            </h3>
+                        </a>
+                        <div class="body">
+                            Using 3D printers and modular practices to combat issues of construction industry.
+                        </div>
+                        <a href="#">
+                            <div class="imgBox cardFour text-center align-items-center">
+                                <img src="Assets/3Dprinter.gif" alt="image of a car infotainment" class="img-fluid cardImg">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 caption more px-5 text-end">
+                <a href="https://www.behance.net/prateeksingh20" target="_blank" rel="noopener noreferrer">
+                    View more projects >
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer container-fluid">
+            <div class="links text-center">
+                <a href="https://www.linkedin.com/in/prateeksingh20/" target="_blank" rel="noopener noreferrer">
+                    <img src="/Assets/LinkedIn.svg" alt="LinkedIn Logo" class="img-fluid logo">
+                </a><a href="https://www.medium.com/@prateeksingh20" target="_blank" rel="noopener noreferrer">
+                    <img src="/Assets/Medium.svg" alt="Medium Logo" class="img-fluid logo">
+                </a><a href="https://www.behance.net/prateeksingh20/" target="_blank" rel="noopener noreferrer">
+                    <img src="/Assets/Behance.svg" alt="Gmail Logo" class="img-fluid logo">
+                </a>
+            </div>
+            <div class="footnote text-center">
+                ©2022 | <a href="mailto:sprateek0204@gmail.com">sprateek0204@gmail.com</a>
+                <br>
+                Designed and coded with &#10084;
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
