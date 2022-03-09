@@ -139,12 +139,6 @@ a.navbar-brand:hover #bottomLogo{
 
 }
 
-/* a.navbar-brand:hover #topLogo{
-    filter: opacity(0);
-    transition: 1s;
-} */
-
-
 .divider{
     margin-top: 5rem;
     margin-bottom:5rem ;
@@ -159,7 +153,6 @@ a.navbar-brand:hover #bottomLogo{
 .roundedBorder{
     border: 1px solid #62929E;
     border-radius: 0px;
-    /* padding:0.5rem; */
 }
 
 .bold{
@@ -237,6 +230,12 @@ a.navbar-brand:hover #bottomLogo{
     margin-left: -50px;
     animation: bounce 2s infinite;
     animation-timing-function: ease;
+}
+
+@media screen and (max-width:768px) {
+    #goto{
+        bottom:10vh;
+    }   
 }
 
 @keyframes bounce {
