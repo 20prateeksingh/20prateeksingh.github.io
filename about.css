@@ -29,6 +29,10 @@
     transition: 0.5s;
 }
 
+#toolkit{
+    width: 100%;
+}
+
 .line{
     max-width: 100%;
     height: 1px;
@@ -38,6 +42,12 @@
     margin-bottom: 1rem;
 }
 
-#wrapper a{ 
+#wrapper a{     
     color: inherit;
+}
+
+@media screen and (max-width:768px) {
+    .row{
+        --bs-gutter-x: 0rem !important    ;
+    }
 }

@@ -1,3 +1,9 @@
+@media screen and (max-width:768px) {
+    .row{
+        --bs-gutter-x: 0rem !important    ;
+    }
+}
+
 .greet{
     box-shadow: 0px 1px 0px #434343;
 
@@ -18,11 +24,11 @@
   animation: AnimateBG 5s ease infinite;
 }
 
-.myName:hover{
+.myName{
     background-size: 300% 300%;
     justify-content: center;
-    background-clip: text;
-    -webkit-background-clip: text;
+    background-clip:content-box;
+    -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(
         -45deg, 
@@ -33,6 +39,10 @@
     );
   
   animation: AnimateBG 5s ease infinite;
+}
+
+.myName:hover{
+    animation: AnimateBG 1s ease infinite;
 }
 
 @keyframes AnimateBG { 
@@ -59,12 +69,6 @@
     100%{transform: rotate(0deg);}
 }
 
-.myName{
-    text-decoration: none;
-    color: #212529;
-}
-
-
 .forcedContainer{
     max-width: 100%;
 }
@@ -87,8 +91,7 @@
 {
     .forcedContainer{
         max-width: 960px;
-    }
-    
+    }    
 }
 
 @media screen and (min-width:1200px)
@@ -96,7 +99,6 @@
     .forcedContainer{
         max-width: 1140px;
     }
-    
 }
 
 @media screen and (min-width:1400px)
@@ -110,12 +112,21 @@
     .forcedContainer>h1{
         font-size: 36px;
         line-height: 49px;
-    }
-    
+    }  
 }
 
 .recentProjects{
     padding-top: 8rem;
+}
+
+@media screen and (max-width:768px) {
+    .recentProjects{
+        padding-top: 1.5rem;
+    }
+
+    #headerRecent{
+        padding-left: 2rem;
+    }
 }
 
 .project>*{
