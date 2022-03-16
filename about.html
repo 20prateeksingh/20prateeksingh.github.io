@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>About me</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This webpage is Prateek Singh's design portfolio.">
+    <meta name="keywords" content="Prateek Singh, UX Designer, Product Designer, Designer, User Experience">
+    <meta name="author" content="Prateek Singh">
     <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Assets/flavicon.ico">
+    <meta property="og:title" content="Prateek Singh's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prateeksingh.in/" />
+    <meta property="og:image" content="https://prateeksingh.in/Assets/Website_og_thumbnail.png" />
+    <meta name="description" property="og:description" content="I'm a Product Designer / UX Designer based in India. This website is my tiny island in the vast sea that is the internet." />
+    <meta name="author" content="Prateek Singh">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="about.css">
-    <title>About me</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD4QKS7PSS"></script>
     <script>
@@ -60,7 +70,7 @@
 
     <div class="container" id="wrapper">
         <div class="row justify-content-between" id="content">
-            <div class="col-md-5 col-12 about">
+            <div class="col-md-5 col-12 about your-element">
                 <img src="/Assets/Prateek_bnw.jpg" alt="My photo" class="img-fluid" id="myPhoto">
             </div>
             <div class="col-md-6 col-12 body about" id="myAbout">
@@ -207,7 +217,13 @@
             </div>
         </div>
     </footer>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".your-element"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
 
