@@ -170,7 +170,7 @@
     color: inherit;
 }
 
-.project>a:hover{
+.project a:hover{
     text-decoration: underline;
 }
 
