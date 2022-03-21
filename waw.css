@@ -2,6 +2,8 @@
     position: relative;
     height: 100vh;
     background-color: #E5C1BD;
+    display: flex;
+    justify-content: center;
     margin-bottom: 5rem;
 }
 
