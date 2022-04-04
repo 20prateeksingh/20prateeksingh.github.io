@@ -1,42 +1,52 @@
+html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
 }
-  html {
-    height: -webkit-fill-available;
+
+.black{
+    color: #000000;
 }
 
-html{
-    scroll-behavior: smooth;
+.grey1{
+    color: #121212 !important;
 }
-  
+
+.grey2{
+    color: #181818 !important;
+}
+
 
 h1{
-    font-family: 'Cardo' , sans-serif;
+    font-family: 'Red Hat Display' , sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
+    font-weight: 700;
+    font-size: 48px;
     line-height: 150%;
 }
 
 h2{
-    font-family: 'Cardo' , sans-serif;
+    font-family: 'Red Hat Display' , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    line-height: 49px;
+    line-height: 150%;
 }
 
 h3{
-    font-family: Cardo;
+    font-family: 'Red Hat Display' , sans-serif;
     font-style: normal;
-    /* font-weight: bold; */
-    font-size: px;
-    line-height: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
 }   
 
 .body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -46,7 +56,7 @@ h3{
 }
 
 .bodyHeader{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -54,7 +64,7 @@ h3{
 }
 
 .bodySubHeader{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -64,7 +74,7 @@ h3{
 }
 
 .caption{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -82,20 +92,22 @@ h3{
 /* Navbar */
 
 .navbarBg{
-    background: rgba(214, 214, 214, 0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0px 1px 0px #434343;
+    background: rgba(255, 255, 255, 0) !;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(120px);
+    box-shadow: none;
 }
 
 .nav-link{
-    font-family: 'Cardo' , sans-serif;
+    font-family: 'Red Hat Display' , sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 150%;
     text-transform: uppercase;
-    color: hsla(120, 20%, 6%, 0.5) !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+    color: hsla(120, 20%, 6%, 0.7) !important;
 }
 
 .nav-link:hover{
@@ -103,40 +115,50 @@ h3{
     transition: 0.5s;
 }
 
-@media screen and (min-width: 1366px)
-{
-    .nav-link{
-        padding-right: 0 !important;
-        padding-left: 4rem !important;
-    }
+/* .navbarBg{
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px);
+    box-shadow: none !important;
+} */
+
+.navbarBg.sticky-top.scrolled{
+    background: rgba(214, 214, 214, 0.3);
+    backdrop-filter: blur(120px) !important;
+    -webkit-backdrop-filter: blur(120px);
+    box-shadow: 0px 1px 0px #434343 !important;
+    transition: 100ms linear;
 }
 
 .navbar{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 75px;
 }
+
+@media screen and (max-width:576px) {
+    .navbar{
+        margin-top: 0px !important;
+        backdrop-filter: blur(120px) !important;
+    }    
+
+    #navAdjust{
+        padding: 0 1rem !important;
+    }
+
+    .nav-link{
+        padding-left: 0 !important;
+    }
+}
+
+/* @media screen and (max-width: 992px)
+{
+    .nav-link{
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+} */
 
 a.navbar-brand{
     position: relative;
-}
-
-a.navbar-brand>img{
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: -15px;
-    left: 0;
-}
-
-#bottomLogo{
-    filter: opacity(0);
-
-}
-
-a.navbar-brand:hover #bottomLogo{
-    filter: opacity(1);
-    transition: 1s;
-
 }
 
 .divider{
@@ -225,9 +247,13 @@ a.navbar-brand:hover #bottomLogo{
 
 #goto{
     position: absolute;
-    bottom: 5vh;
+    bottom: 7vh;
     left: 50%;
-    margin-left: -50px;
+    transform: translate(-50% , 0);
+}
+
+
+#chevron-down{
     animation: bounce 2s infinite;
     animation-timing-function: ease;
 }
@@ -235,6 +261,13 @@ a.navbar-brand:hover #bottomLogo{
 @media screen and (max-width:768px) {
     #goto{
         bottom:10vh;
+    }   
+}
+
+@media screen and (max-width:576px) {
+    #goto{
+        display: none;
+        /* bottom:calc(10vh + 75px); */
     }   
 }
 
@@ -268,4 +301,51 @@ a.navbar-brand:hover #bottomLogo{
 
 .footnote a:hover{
     text-decoration: underline;
+}
+
+
+.forcedContainer{
+    max-width: 100%;
+}
+
+@media screen and (min-width:576px)
+{
+    .forcedContainer{
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:768px)
+{
+    .forcedContainer{
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width:992px)
+{
+    .forcedContainer{
+        max-width: 960px;
+    }    
+}
+
+@media screen and (min-width:1200px)
+{
+    .forcedContainer{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width:1400px)
+{
+    .forcedContainer{
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .forcedContainer>h1{
+        font-size: 36px;
+        line-height: 49px;
+    }  
 }

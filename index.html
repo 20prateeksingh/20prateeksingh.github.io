@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Assets/flavicon.ico">
     <meta property="og:title" content="Prateek Singh's Portfolio" />
     <meta property="og:type" content="website" />
@@ -22,6 +24,9 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD4QKS7PSS"></script>
     <script>
@@ -41,11 +46,10 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-sm navbar-light navbarBg fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light navbarBg sticky-top ">
+        <div class="container" id="navAdjust">
             <a href="index.html" class="navbar-brand">
-                <img src="Assets/Logo4.svg" alt="Prateek Singh" id="bottomLogo"> 
-                <img src="Assets/Logo6.svg" alt="Prateek Singh" id="topLogo">
+                <img src="Assets/Logo.svg" alt="Prateek Singh"> 
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -66,29 +70,50 @@
         </div>
     </nav>
 
-    
-    <!-- Greet -->
-    <div class="container-fluid greet min-vh-100">
-        <div class="row forcedContainer">
-            <h2>
-                Hey <div class="wave">&#x1F44B;</div>
-            </h2> 
-            <h1>
-                I’m <a href="about.html" class="myName">Prateek Singh</a>, <br> a Product Designer based in India. 
-            </h1>
-            <div class="body">
-                <br>
-                Currently <strong>Lead UX</strong> @ Wongdoody | Infosys
+    <section id="cover">
+        <div id="colors">
+            <div id="red">
+            </div>
+            <div id="yellow">
+            </div>
+            <div id="blue">
+            </div>
+            <div id="green">
             </div>
         </div>
-        <div class="row text-center" id="goto">
-            <a href="#recentProjects" class="px-5">
+        <div id="glass">
+        </div>
+        <div class="introText container">
+            <div class="innerText">
+                <h3 class="grey2">Hey,</h3>
+                <h1>I’m Prateek Singh</h1>
+                <h3 class="grey2">A digital Product Designer based in Delhi, India. I dwell somewhere in the intersection of design, technology and XR.</h3>
+                <div id="greyLine"></div>
+                <div class="body grey2">Currently <strong>Lead UX</strong> @ Wongdoody | Infosys</div>
+                <div class="introLinks">
+                    <a href="https://www.linkedin.com/in/prateeksingh20/" target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/LinkedIn.png" alt="LinkedIn Logo" class="img-fluid logo">
+                    </a><a href="https://www.medium.com/@prateeksingh20" target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/Medium.png" alt="Medium Logo" class="img-fluid logo">
+                    </a><a href="https://www.behance.net/prateeksingh20/" target="_blank" rel="noopener noreferrer">
+                        <img src="/Assets/Behance.png" alt="Gmail Logo" class="img-fluid logo">
+                    </a>
+                </div>  
+            </div>
+
+        </div>
+        <div id="lottie">
+                <lottie-player id="firstLottie" src="https://assets5.lottiefiles.com/packages/lf20_fglpsuqs.json" ></lottie-player>
+        </div>
+        <div id="goto">
+            <a href="#recentProjects" class="p-5">
                 <img src="/Assets/chevron-double-down.svg" alt="Go to Projects" id="chevron-down">
             </a>
         </div>
-    </div>
+    </section>
 
 
+    
     <!-- Recent Projects -->
 
     <div class="container recentProjects" id="recentProjects">
@@ -200,8 +225,29 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
-    
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+        if (screen && screen.width > 1366) 
+        {
+            document.write('<script type="text/javascript" src="lottie_desktop.js"><\/script>');
+        }
+    </script>        
+    <script>
+        if (screen && screen.width < 1366 || screen && screen.width > 576) 
+        {
+            document.write('<script type="text/javascript" src="lottie_mobile.js"><\/script>');
+        }
+    </script>
+    <script type="text/javascript" src="lottie_mobileSmall.js"></script>
+    <!-- <script>
+        if (screen && screen.width < 576) 
+        {
+            document.write('<script type="text/javascript" src="lottie_mobileSmall.js"><\/script>');
+        }
+    </script> -->
 </body>
 </html>

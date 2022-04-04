@@ -5,6 +5,7 @@
 }
 
 .cover{
+    margin-top: -150px;
     position: relative;
     height: 100vh;
     background-color: #CFFFB0;
