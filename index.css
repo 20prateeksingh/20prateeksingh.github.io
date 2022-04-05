@@ -134,8 +134,8 @@
 @media screen and (max-width:576px) {
     #glass{
         width: calc(100vw - 2vh) !important;
-        height: calc(98vh - 60px ) !important;
-        margin-top: -20px;
+        height: calc(98vh - 135px ) !important;
+        margin-top: -35px;
     }
     
     #firstLottie{
@@ -148,7 +148,7 @@
     }
 
     .introText{
-        margin-top: -30vh !important;
+        margin-top: -30vh;
     }
 
     .innerText{
@@ -163,6 +163,16 @@
     }
 }
 
+@media screen and (max-width:412px) {
+    .introLinks a{
+        padding-top: 0; 
+    }
+
+    .introText{
+        margin-top: -35vh;
+    }
+}
+
 
 @media screen and (max-width:1600px) {
     #firstLottie{
@@ -174,11 +184,11 @@
 
 @media screen and (max-width:1200px) {
     
-    h1{
+    .innerText h1{
         font-size: 36px;
     }
         
-    h3{
+    .innerText h3{
         font-size: 16px;
     }  
     
@@ -195,11 +205,11 @@
 
 @media screen and (max-width:1366px) {
     
-    h1{
+    .innerText h1{
         font-size: 32px;
     }
         
-    h3{
+    .innerText h3{
         font-size: 14px;
     }  
     
@@ -228,17 +238,17 @@
         padding-top: 1.5rem;
     }
 
-    #headerRecent{
+    /* #headerRecent{
         padding-left: 2rem;
-    }
+    } */
 }
 
 .project>*{
-    margin-bottom: 16px;
+    margin-bottom: 0.5rem;
 }
 
 .imgBox{
-    margin: 24px 0 64px;
+    margin: 0 0 2rem;
     border-radius: 4px;
 }
 
@@ -306,7 +316,7 @@
 }
 
 .more{
-    margin-top: -2rem;   
+    margin-top: -1rem;   
 }
 
 
