@@ -10,8 +10,6 @@
     position: relative;
 	height: 100vh;
 	width: 100vw;
-    /* display: flex;
-    align-items: center; */
 }
 
 #colors {
@@ -27,7 +25,6 @@
     height: 90vh;
     background: #fff;
 	overflow: hidden;
-
 }
 
 #red{
@@ -81,7 +78,7 @@
     width: calc(100vw - 10vh);
     height: 90vh;
     background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.08) 28.69%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: INSET 0px 0px 100px 20px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(80px);
     -webkit-backdrop-filter: blur(80px);
     border-radius: 24.5221px;
@@ -91,11 +88,6 @@
     margin: 0 auto;
     margin-top: -40vh;
     transform: translate(0, -50%);
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; */
 }
 
 .innerText{
@@ -143,7 +135,7 @@
     #glass{
         width: calc(100vw - 2vh) !important;
         height: calc(98vh - 60px ) !important;
-        margin-top: -60px;
+        margin-top: -20px;
     }
     
     #firstLottie{
@@ -152,15 +144,17 @@
 
     #cover{
         margin-top: 0;
+        height: calc(100vh - 75px);
     }
 
     .introText{
         margin-top: -30vh !important;
     }
 
-    #greyLine{
-        margin: 1rem 0 !important;
+    .innerText{
+        margin-left: 1rem;
     }
+
 
     #firstLottie{
         margin-top: -300px !important;
@@ -210,7 +204,11 @@
     }  
     
     .innerText{
-        max-width: 280px;
+        max-width: 380px;
+    }
+
+    #greyLine{
+        margin: 1rem 0 !important;
     }
 
     #firstLottie{
@@ -219,13 +217,6 @@
         height: 400px;
     }
 }
-
-@media screen and (max-width:576px) {
-    .innerText{
-        margin-left: 1rem;
-    }
-}
-
 
 
 .recentProjects{
@@ -303,15 +294,7 @@
   animation: AnimateBG 3s ease infinite;
 }
 
-@media screen and (max-width:992px) {
-    
-    #projects>.project{
-        padding-right: calc(var(--bs-gutter-x) * .5) !important;
-        padding-left: calc(var(--bs-gutter-x) * .5) !important;
-    }
-}
-
-@media screen and (max-width:1400px) {
+@media screen and (min-width:1400px) {
     #projects{
         --bs-gutter-y:0;
     }
