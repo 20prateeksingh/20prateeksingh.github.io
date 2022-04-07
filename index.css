@@ -335,3 +335,9 @@ body{
 .more a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width:576px) {
+    #goto{
+        display: none;
+    }   
+}

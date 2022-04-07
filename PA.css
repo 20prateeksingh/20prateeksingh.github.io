@@ -12,6 +12,13 @@
     margin-bottom: 5rem;
 }
 
+@media screen and (max-width:576px){
+    .cover{
+        height: calc(100vh + 75px);
+        margin-top: -200px;
+    }
+}
+
 .tagline{
     font-family: 'Cardo', sans-serif;
     font-size: 36px;
