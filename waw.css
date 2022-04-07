@@ -24,3 +24,13 @@
 .more a:hover{
     font-weight: bold;
 }
+
+@media screen and (max-width:1200px) {
+    .hideS{
+        display: none;
+    }    
+}
+
+#projects{
+    background-color: #E5C1BD;
+}

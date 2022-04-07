@@ -13,6 +13,7 @@ body{
     position: relative;
 	height: 100vh;
 	width: 100vw;
+    overflow: hidden;
 }
 
 #colors {
@@ -24,7 +25,7 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: 80vw;
     height: 90vh;
     background: #fff;
 	overflow: hidden;
@@ -264,7 +265,7 @@ body{
 }
 
 .cardThree{
-    background: linear-gradient(85.33deg, #FFF689 0%, #F8F4C3 100%);
+    background: linear-gradient(85.33deg, #CEFF89 0%, #E2F8C3 100%);
 }
 
 .cardFour{
@@ -272,13 +273,16 @@ body{
 }
 
 .cardImg{
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.02));
+    border-radius: 10px;
     width: 90%;
     height: auto;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .imgBox:hover > .cardImg{
-    transform: scale(1);
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));   
+    transform: scale(0.9);
     transition: 0.6s ease;
 }
 
@@ -292,7 +296,7 @@ body{
 }
 
 .project>.caption{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .imgBox:hover{
