@@ -3,7 +3,7 @@ var yellow= $('#yellow');
 var blue= $('#blue');
 var green= $('#green');
 
-var layer= $('#cover');
+var layer= $('#overlay');
 
 layer.mousemove(function(e){
   var rvalueX= (e.pageX * -1 / 5);
