@@ -22,9 +22,11 @@ layer.mousemove(function(e){
 });
 
 
-// $(function () {
-//   $(document).scroll(function () {
-//     var $nav = $(".sticky-top");
-//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-//   });
-// });
+$(function() {
+  $('.hoverControl').hover(function() {
+    $('.hoverBomb').css('display', 'block');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.hoverBomb').css('display', 'none');
+  });
+});

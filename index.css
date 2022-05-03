@@ -8,8 +8,207 @@ body{
     overflow-x: hidden;
 }
 
+#overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.hoverControl{
+    position: relative;
+    transform: translate(160px , calc(-75px + 5vh + 90vh - 45vh - 42px));
+}
+
+#hoverPoint{
+    position: absolute;
+    background: linear-gradient(0deg, #F2C94C 0%, rgba(242, 201, 76, 0) 28.02%, rgba(242, 201, 76, 0) 100%);
+    padding: 2px;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+#hoverPoint:hover{
+    background: linear-gradient(0deg, #F2C94C 0%, rgba(242, 201, 76, 0) 100%);
+}
+
+.hoverBomb{
+    display: none;
+}
+
+#overlay h3{
+    margin-bottom: 0px !important;
+}
+
+.overlayImg{
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.dimLine{
+    position: absolute;
+    width: calc(100vw - 10vh);
+    margin-left: 5vh;
+    height: 1px;
+}
+
+.gridLine{
+    opacity: 0.5;
+    border: 1px dashed #FF0000;
+}
+
+.dimDim{
+    border: 1px solid #FF0000;
+}
+
+.dimHorizontal{
+    margin-top: 80vh;
+}
+
+.dimHorizontal h3{
+    font-family: 'Red Hat Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.figmaBox{
+    position: absolute;
+    margin-top: calc(-75px + 5vh + 90vh - 45vh);
+    transform: translate(-10px, -50%);
+    height: calc(377.781px + 20px);
+    width: calc(520px + 20px);
+    border: 2px solid #3BA9FC;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#boxDim{
+    background: #3BA9FC;
+    color: #ffffff;
+    width:fit-content;
+    border-radius: 4px;
+    transform: translateY(30px);
+}
+
+#boxDimSmall{
+    display: none;
+    background: #3BA9FC;
+    color: #ffffff;
+    width:fit-content;
+    border-radius: 4px;
+    transform: translateY(30px);
+}
+
+
+#designedOn{
+    position: absolute;
+    display: flex;
+    margin-top: calc(-75px + 5vh + 90vh - 45vh + 210px);
+    transform: translateX(-15px);
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width:1366px) {
+    .figmaBox{
+        height: calc(232.79px + 20px);
+        width: calc(380px + 20px);
+    }
+
+    .hoverControl h3{
+        font-size: 14px;
+    }
+
+    .hoverControl{
+        transform: translate(calc(160px - 48px) , calc(-75px + 5vh + 90vh - 45vh - 42px  + 31px));
+    }
+
+    #designedOn{
+        margin-top: calc(-75px + 5vh + 90vh - 45vh + 137px);
+    }
+
+    #boxDim{
+        display: none;
+    }
+
+    #boxDimSmall{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #overlay{
+        display: none;
+    }    
+}
+
+#overlayCol{
+    float: right !important;
+    margin-top: calc(-52px + 64px);
+    margin-right: calc(262.72px - 138.31px + 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translateX(-10px);
+}
+
+#boxModel{
+    transform: translateX(-128.31px);
+}
+
+#greenBox{
+    width: 127.69px;
+    height: 50px;
+    background: rgba(121, 177, 78, 0.4);
+}
+
+#blueBox{
+    background: #689CD9;
+    opacity: 0.5;
+    width: 65px;
+    height: 27px;
+    transform:translate(32px,-39px)
+}
+
+.overlayRed{
+    color: red;
+}
+
+#inspectPanel{
+    transform: translate(0px , -30px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#inspectPanel>img{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
+
+#dialGif{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    transform: translate(0 , -20px);
+}
+
+#dialGif>img{
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+}
+
+#modeledOn, #integratedOn{
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
 #cover{
-    margin-top: -150px;
+    margin-top: calc(-150px);
     position: relative;
 	height: 100vh;
 	width: 100vw;
@@ -17,7 +216,7 @@ body{
 }
 
 #colors {
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -85,11 +284,10 @@ body{
     box-shadow: INSET 0px 0px 100px 20px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(80px);
     -webkit-backdrop-filter: blur(80px);
-    border-radius: 24.5221px;
+    border-radius: 24px;
 }
 
 .introText{
-    margin: 0 auto;
     margin-top: -40vh;
     transform: translate(0, -50%);
 }
@@ -112,6 +310,16 @@ body{
     height: 24px;
 }
 
+#hoverSwitch{
+    padding: 2px;
+    opacity: 0;
+}
+
+@media screen and (max-width:1200px) {
+    #hoverSwitch{
+        opacity: 1;
+    }
+}
 
 #greyLine{
     width: 25px;
@@ -129,10 +337,19 @@ body{
 
 #firstLottie{
     margin-top: -300px;
-    width: 600px;
     height: 600px;
+    width: 600px;
     margin-right: 5vh;
     mix-blend-mode: multiply;
+}
+
+#secondLottie{
+    margin-top: -300px;
+    height: 250px;
+    width: 250px;
+    margin-right: 5vh;
+    mix-blend-mode: multiply;
+    display: none;
 }
 
 @media screen and (max-width:576px) {
@@ -143,7 +360,7 @@ body{
     }
     
     #firstLottie{
-        margin-right: 1vh !important;
+        display: none;
     }
 
     #cover{
@@ -160,10 +377,12 @@ body{
     }
 
 
-    #firstLottie{
+    #secondLottie{
+        margin-right: 1vh !important;
         margin-top: -300px !important;
-        width: 250px !important;
-        height: 250px !important;
+        display: block;
+        position: sticky;
+        top: 100px;
     }
 }
 
@@ -186,7 +405,7 @@ body{
     }
 }
 
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     
     .innerText h1{
         font-size: 36px;
@@ -205,7 +424,7 @@ body{
         width: 400px;
         height: 400px;
     }
-}
+} */
 
 @media screen and (max-width:1366px) {
     

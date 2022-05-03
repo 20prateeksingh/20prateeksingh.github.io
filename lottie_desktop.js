@@ -1,12 +1,12 @@
 LottieInteractivity.create({
     player: "#firstLottie",
     mode:"cursor",
-    container: "#cover",
+    container: "#overlay",
     actions: [
         {
             position: { x: [0, 1], y: [0,1] },
             type: "seek",
-            frames: [0, 73]
+            frames: [0, 72]
         }
     ]
 });

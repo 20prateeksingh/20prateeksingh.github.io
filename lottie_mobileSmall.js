@@ -1,5 +1,5 @@
 LottieInteractivity.create({
-    player:'#firstLottie',
+    player:'#secondLottie',
     mode:"cursor",
     actions: [
         {
